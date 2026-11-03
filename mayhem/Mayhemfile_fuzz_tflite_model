@@ -1,0 +1,9 @@
+project: savantenvs/litert
+target: fuzz_tflite_model
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_tflite_model/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_tflite_model
+    libfuzzer: true
+    timeout: 20

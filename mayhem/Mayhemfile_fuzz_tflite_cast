@@ -1,0 +1,6 @@
+project: savantenvs/litert
+target: fuzz_tflite_cast
+cmds:
+  - cmd: /mayhem/fuzz_tflite_cast
+    libfuzzer: true
+    timeout: 20
